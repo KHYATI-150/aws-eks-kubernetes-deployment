@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kubernetes Demo Service</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>☸️ Kubernetes Demo Service</h1>
+      <p class="subtitle">
+        Verify deployments and autoscaling as you move from local → Docker → Kubernetes
+      </p>
+
+      <div class="card">
+        <h2>Deployment Info</h2>
+        <p><b>Version:</b> <span id="version">—</span></p>
+        <p><b>Instance / Pod:</b> <span id="instance">—</span></p>
+        <p><b>Status:</b> <span id="status">Checking…</span></p>
+      </div>
+
+      <div class="card">
+        <h2>Simulate Load</h2>
+        <p>This increases CPU usage to trigger Kubernetes autoscaling.</p>
+        <button id="loadBtn">Generate Load</button>
+        <pre id="output">—</pre>
+      </div>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
